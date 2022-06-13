@@ -22,10 +22,7 @@ class FormManager{
     private $tagslist = [TextFormat::YELLOW . "Krontol", TextFormat::BLUE . "Vestri", TextFormat::DARK_PURPLE . "Neferhir", TextFormat::WHITE . "Kri" . TextFormat::AQUA . "spi"];
 
     public function ffaForm(Player $player){
-        $api =Server::getInstance()->getPluginManager()->getPlugin("FormAPI");
-        if ($api === null) {
-        }
-        $form = $api->createSimpleForm(function (Player $player, $data) {
+        $form = new SimpleForm(function(Player $player, int $data = null){
             $result = $data;
             if ($result === null) {
                 return true;
@@ -83,10 +80,7 @@ class FormManager{
     }
 
     public function duelsForm(Player $player){
-        $api = Server::getInstance()->getPluginManager()->getPlugin("FormAPI");
-        if ($api === null) {
-        }
-        $form = $api->createSimpleForm(function (Player $player, $data) {
+        $form = new SimpleForm(function(Player $player, int $data = null){
             $result = $data;
             if ($result === null) {
                 return true;
@@ -109,10 +103,7 @@ class FormManager{
     }
 
     public function botForm(Player $player){
-        $api = Server::getInstance()->getPluginManager()->getPlugin("FormAPI");
-        if ($api === null) {
-        }
-        $form = $api->createSimpleForm(function (Player $player, $data) {
+        $form = new SimpleForm(function(Player $player, int $data = null){
             $result = $data;
             if ($result === null) {
                 return true;
@@ -142,10 +133,7 @@ class FormManager{
     }
 
     public function rankform(Player $player){
-        $api = Server::getInstance()->getPluginManager()->getPlugin("FormAPI");
-        if ($api === null) {
-        }
-        $form = $api->createSimpleForm(function (Player $player, $data) {
+        $form = new SimpleForm(function(Player $player, int $data = null){
             $result = $data;
             if ($result === null) {
                 return true;
@@ -185,10 +173,7 @@ class FormManager{
     }
 
     public function unrankform(Player $player){
-        $api = Server::getInstance()->getPluginManager()->getPlugin("FormAPI");
-        if ($api === null) {
-        }
-        $form = $api->createSimpleForm(function (Player $player, $data) {
+        $form = new SimpleForm(function(Player $player, int $data = null){
             $result = $data;
             if ($result === null) {
                 return true;
@@ -228,10 +213,7 @@ class FormManager{
     }
 
     public function cosmeticshop(Player $player){
-        $api = Server::getInstance()->getPluginManager()->getPlugin("FormAPI");
-        if ($api === null) {
-        }
-        $form = $api->createSimpleForm(function (Player $player, $data) {
+        $form = new SimpleForm(function(Player $player, int $data = null){
             $result = $data;
             if ($result === null) {
                 return true;
@@ -299,10 +281,7 @@ class FormManager{
     }
 
     public function usecosmeticform(Player $player){
-        $api = Server::getInstance()->getPluginManager()->getPlugin("FormAPI");
-        if ($api === null) {
-        }
-        $form = $api->createSimpleForm(function (Player $player, $data) {
+        $form = new SimpleForm(function(Player $player, int $data = null){
             $result = $data;
             if ($result === null) {
                 return true;
@@ -325,10 +304,7 @@ class FormManager{
     }
 
     public function usecapeform(Player $player){
-        $api = Server::getInstance()->getPluginManager()->getPlugin("FormAPI");
-        if ($api === null) {
-        }
-        $form = $api->createSimpleForm(function (Player $player, $data) {
+        $form = new SimpleForm(function(Player $player, int $data = null){
             $result = $data;
             if ($result === null) {
                 return true;
@@ -367,10 +343,7 @@ class FormManager{
     }
 
     public function tagsshop(Player $player){
-        $api = Server::getInstance()->getPluginManager()->getPlugin("FormAPI");
-        if ($api === null) {
-        }
-        $form = $api->createSimpleForm(function (Player $player, $data) {
+        $form = new SimpleForm(function(Player $player, int $data = null){
             $result = $data;
             if ($result === null) {
                 return true;
@@ -400,10 +373,7 @@ class FormManager{
     }
 
     public function usetagsform(Player $player){
-        $api = Server::getInstance()->getPluginManager()->getPlugin("FormAPI");
-        if ($api === null) {
-        }
-        $form = $api->createSimpleForm(function (Player $player, $data) {
+        $form = new SimpleForm(function(Player $player, int $data = null){
             $result = $data;
             if ($result === null) {
                 return true;
