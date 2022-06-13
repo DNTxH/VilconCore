@@ -9,7 +9,7 @@ use pocketmine\utils\TextFormat;
 use SandhyR\VilconCore\arena\Arena;
 use SandhyR\VilconCore\arena\KitManager;
 use pocketmine\entity\Skin;
-use jojoe77777\FormAPI\SimpleForm;
+use Vecnavium\FormsUI\SimpleForm;
 use SandhyR\VilconCore\bot\EasyBot;
 use SandhyR\VilconCore\bot\HardBot;
 use SandhyR\VilconCore\bot\HackerBot;
